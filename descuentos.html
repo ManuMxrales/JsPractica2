@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Descuentos</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calcula el Precio Con Descuento</h1>
+    </header>
+    <main>
+      <div class="card-container">
+        <h2>Ingresa la informacion</h2>
+        <form action="#">
+          <label for="inputPrecio">Ingresa el Precio</label>
+          <input class="primary-input" id="inputPrecio" type="number" placeholder="$$$" required />
+
+          <label for="inputDescuento">Ingresa el Descuento</label>
+          <input class="primary-input" id="inputDescuento" type="number" placeholder="%%%" required />
+
+          <div class="result-container">
+            <p class="result" id="result"></p>
+          </div>
+          <button
+            class="primary-button"
+            type="button"
+            onclick="onClickButtonPriceDiscount()"
+          >
+            Calcular
+          </button>
+          <button class="primary-button" type="reset" onclick="clearData()">Clear</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <h3>Hecho Con 🧡</h3>
+    </footer>
+    <script src="./descuentos.js"></script>
+  </body>
+</html>
